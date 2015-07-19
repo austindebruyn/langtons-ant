@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Ant
+		script(src='js/jquery-2.1.3.min.js')
+		script(src='js/pixi.dev.js')
+		script(src='js/underscore-min.js')
+		script(src='js/backbone-min.js')
+		script(src='js/src/ant.js')
+		script(src='js/src/main.js', defer='defer')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/main.css')
+	body
+		.container.content
+			.col-sm-6.col-xs-12
+				canvas#game
+			.col-sm-6.col-xs-12
+				h1 Langton's Ant
+				p
+					| The ant is a rule-following creature that roams from cell to cell,
+					| coloring cells and turning left or right when encountering
+					| successive colors of cells. Program the ant with a behavior below:
+				.col-xs-12
+					input(name='behavior', type='text')
+					button.btn.btn-md.btn-primary(type='button', name='try') Restart
+					button.btn.btn-md.btn-primary(type='button', name='pause') Pause
+		footer
+			p
+				| 2015
+				a(href='https://au.stin.xyz/') au.stin.xyz
+			p Source is public domain
